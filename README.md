@@ -36,3 +36,9 @@ The folder *optional* contains 4 small scripts which allow me to achieve this go
 Same goes for the *restore-variable.sh*, which changes the flag in *startup-vlc.sh* back to `false`, so that the video player is not started after a standard reboot.
 
 The last two scripts, *shutdown-vlc.sh* and *vlc-restore.sh* are run remotely, the first one serves the purpose of starting the video player before sleep and lowering the blue gamma (to help fall asleep), while the second reverts the blue gamma back to normal, should the need arise.
+
+### \#todo
+
+[ ] better specify and / or limit the `-d` option, possible totally redo the shutdown option time specification
+[ ] catch the input time errors, add constrainments
+[x] upload the first version to GitHub so that I don't lose this script :)
