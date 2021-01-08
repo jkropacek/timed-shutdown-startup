@@ -10,20 +10,20 @@ This script allows you to shutdown and startup the computer at a specific time. 
   * The shutdown and startup are performed through the `rtcwake` command, which is part of `linux-utils-ng`, usually already preinstalled.
   * `rtcwake` requires **root priviledges**
   * in order to be able to run the script without having to pass the password, I found two possible ways:
-    * Add the `rtcwake` command into the *sudoers* file, allowing it to run without the password. This is done via calling the `sudo visudo` command, and adding the `$USER ALL= NOPASSWD: /usr/sbin/rtcwake` line (please note that the *sudoers* is a config file, th `$USER` variable might not actually work, substitute it with the actual username instead). Note that this will allow the `rtcwake` command to **run without password anywhere on the system**!
+    * Add the `rtcwake` command into the *sudoers* file, allowing it to run without the password. This is done via calling the `sudo visudo` command, and adding the `$USER ALL= NOPASSWD: /usr/sbin/rtcwake` line (please note that the *sudoers* is a config file, the `$USER` variable might not actually work, substitute it with the actual username instead). Note that this will allow the `rtcwake` command to **run without password anywhere on the system**!
     * Add the whole script to the `sudoers` file and lock it up with tight priviledges (I find this option much more dangerous!).
     * If someone manages to find a safer way to run this script (ideally remotely) without having to pass the password, please let me know.
 
 ## Usage
 Run using `sh timed-shutdown-startup.sh [OPTION1] ... [OPTION2] ...`, where the `[OPTIONS]` are used to specify arguments, mainly the day and times at which the computer is supposed to shutdown and startup.
 
-* use `sh timed-shutdown-startup.sh -h` to show general help
-* use `sh timed-shutdown-startup.sh -d` to select day at which to shutdown the computer
+* use `-h` option to show general help
+* use `-d` option to select day at which to shutdown the computer
   * default: `"tomorrow"`
   * for daily usage, the usual values will probably be `"now"`, `"today"` and `"tomorrow"`
-* use `sh timed-shutdown-startup.sh -s` to select shutdown time
+* use `-s` option to select shutdown time
   * default: `"01:00"`
-* use `sh timed-shutdown-startup.sh -b` to select startup time
+* use `-b` option to select startup time
   * default: `"09:00"`
 For all accepted formats of `'-s'` and `'-b'` flags, see man pages of `'date -d'` and `'rtcwake --date'` respectively.
 
