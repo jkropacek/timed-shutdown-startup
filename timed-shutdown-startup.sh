@@ -8,7 +8,7 @@ start_time="09:00"
 print_usage()
 {
 	echo ""
-	echo "Usage: sh startup_shutdown.sh [OPTION1] ... [OPTION2] ..."
+	echo "Usage: sh timed-shutdown-startup.sh [OPTION1] ... [OPTION2] ..."
 	echo ""
 	echo "Available OPTIONs:"
 	echo "-h	show this help"
