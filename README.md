@@ -39,6 +39,6 @@ The last two scripts, *shutdown-vlc.sh* and *vlc-restore.sh* are run remotely, t
 
 ### \#todo
 
-[ ] better specify and / or limit the `-d` option, possible totally redo the shutdown option time specification
-[ ] catch the input time errors, add constrainments
-[x] upload the first version to GitHub so that I don't lose this script :)
+- [ ] better specify and / or limit the `-d` option, possible totally redo the shutdown option time specification
+- [ ] catch the input time errors, add constrainments
+- [x] upload the first version to GitHub so that I don't lose this script :)
