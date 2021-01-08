@@ -1,6 +1,5 @@
 # Timed Shutdown - Startup
 
-
 ## Description
 This script allows you to shutdown and startup the computer at a specific time. The script first announces the shutdown and startup via speech synthetizer, then calculates the time it should be put to sleep from input arguments, so that it can execute `rtcwake` command at a specific time. `rtcwake`'s argument specifies the startup time.
 
