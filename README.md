@@ -25,7 +25,7 @@ Run using `sh timed-shutdown-startup.sh [OPTION1] ... [OPTION2] ...`, where the 
   * default: `"01:00"`
 * use `-b` option to select startup time
   * default: `"09:00"`
-For all accepted formats of `'-s'` and `'-b'` flags, see man pages of `'date -d'` and `'rtcwake --date'` respectively.
+* For all accepted formats of `'-s'` and `'-b'` flags, see man pages of `'date -d'` and `'rtcwake --date'` respectively.
 
 ## Optional
 You may have noticed that one line in the source code is commented (apart from the last three that serve the testing purpose). This is because my primary use of this script is more than just shutting down a computer. As I grew accustomed to falling asleep watching various videos (and waking up to them), I figured I might as well save some money on the electricity bill while I'm asleep.
